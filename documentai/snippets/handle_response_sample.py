@@ -66,7 +66,7 @@ def process_document_ocr_sample(
         print_lines(page.lines, text)
         print_tokens(page.tokens, text)
 
-        # Currently supported in version `pretrained-ocr-v1.1-2022-09-12``
+        # Currently supported in version `pretrained-ocr-v1.1-2022-09-12`
         if page.image_quality_scores:
             print_image_quality_scores(page.image_quality_scores)
 
