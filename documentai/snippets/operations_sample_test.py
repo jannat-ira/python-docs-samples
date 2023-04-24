@@ -15,13 +15,13 @@
 
 import os
 
-from google.api_core.exceptions import FailedPrecondition
-from google.api_core.exceptions import NotFound
-
 from documentai.snippets import cancel_operation_sample
 from documentai.snippets import get_operation_sample
 from documentai.snippets import list_operations_sample
 from documentai.snippets import poll_operation_sample
+
+from google.api_core.exceptions import FailedPrecondition
+from google.api_core.exceptions import NotFound
 
 
 def test_get_operation(capsys):
