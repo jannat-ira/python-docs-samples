@@ -21,7 +21,7 @@
 from typing import Sequence
 
 from google.api_core.client_options import ClientOptions
-from google.cloud import documentai
+from google.cloud import documentai  # type: ignore
 
 # TODO(developer): Uncomment these variables before running the sample.
 # project_id = "YOUR_PROJECT_ID"
@@ -142,7 +142,7 @@ def process_document_form_sample(
     processor_version: str,
     file_path: str,
     mime_type: str,
-):
+) -> None:
     # Online processing request to Document AI
     document = process_document(
         project_id, location, processor_id, processor_version, file_path, mime_type
@@ -200,7 +200,7 @@ def process_document_quality_sample(
     processor_version: str,
     file_path: str,
     mime_type: str,
-):
+) -> None:
     # Online processing request to Document AI
     document = process_document(
         project_id, location, processor_id, processor_version, file_path, mime_type
@@ -233,7 +233,7 @@ def process_document_specialized_sample(
     processor_version: str,
     file_path: str,
     mime_type: str,
-):
+) -> None:
     # Online processing request to Document AI
     document = process_document(
         project_id, location, processor_id, processor_version, file_path, mime_type
@@ -283,7 +283,7 @@ def process_document_splitter_sample(
     processor_version: str,
     file_path: str,
     mime_type: str,
-):
+) -> None:
     # Online processing request to Document AI
     document = process_document(
         project_id, location, processor_id, processor_version, file_path, mime_type

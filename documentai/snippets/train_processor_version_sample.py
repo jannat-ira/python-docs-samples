@@ -16,6 +16,8 @@ from typing import Optional
 
 # [START documentai_train_processor_version]
 
+from typing import Optional
+
 from google.api_core.client_options import ClientOptions
 from google.cloud import documentai  # type: ignore
 

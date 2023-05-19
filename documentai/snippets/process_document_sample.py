@@ -16,6 +16,7 @@ from typing import Optional
 
 # [START documentai_process_document]
 # [START documentai_process_document_processor_version]
+from typing import Optional
 
 from google.api_core.client_options import ClientOptions
 from google.cloud import documentai  # type: ignore
@@ -39,7 +40,7 @@ def process_document_sample(
     field_mask: Optional[str] = None,
     processor_version_id: Optional[str] = None,
 ) -> None:
-    # You must set the api_endpoint if you use a location other than 'us'.
+    # You must set the `api_endpoint` if you use a location other than "us".
     opts = ClientOptions(api_endpoint=f"{location}-documentai.googleapis.com")
 
     client = documentai.DocumentProcessorServiceClient(client_options=opts)

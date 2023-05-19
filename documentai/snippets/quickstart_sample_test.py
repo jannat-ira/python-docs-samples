@@ -21,7 +21,7 @@ from uuid import uuid4
 from documentai.snippets import quickstart_sample
 
 from google.api_core.client_options import ClientOptions
-from google.cloud import documentai
+from google.cloud import documentai  # type: ignore
 
 location = "us"
 project_id = os.environ["GOOGLE_CLOUD_PROJECT"]

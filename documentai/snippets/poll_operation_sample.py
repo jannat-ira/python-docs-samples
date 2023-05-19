@@ -27,7 +27,7 @@ from google.longrunning.operations_pb2 import GetOperationRequest  # type: ignor
 
 
 def poll_operation_sample(location: str, operation_name: str) -> None:
-    # You must set the api_endpoint if you use a location other than 'us'.
+    # You must set the `api_endpoint` if you use a location other than "us".
     opts = ClientOptions(api_endpoint=f"{location}-documentai.googleapis.com")
     client = documentai.DocumentProcessorServiceClient(client_options=opts)
 
