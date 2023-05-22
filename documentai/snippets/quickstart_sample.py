@@ -13,6 +13,8 @@
 # limitations under the License.
 #
 
+# flake8: noqa
+
 # [START documentai_quickstart]
 
 from google.api_core.client_options import ClientOptions
@@ -34,7 +36,7 @@ def quickstart(
     processor_type: str,
     file_path: str,
     mime_type: str,
-):  # noqa: ANN201
+):
     # You must set the `api_endpoint`if you use a location other than "us".
     opts = ClientOptions(api_endpoint=f"{location}-documentai.googleapis.com")
 
