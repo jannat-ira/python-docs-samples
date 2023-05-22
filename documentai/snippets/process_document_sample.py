@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from typing import Optional
 
 # [START documentai_process_document]
 # [START documentai_process_document_processor_version]
